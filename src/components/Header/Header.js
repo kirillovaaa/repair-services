@@ -27,7 +27,7 @@ function Header() {
         </div>
       </div>
       <button className="header__button">
-        <a href="tel:+7 (950) 146-01-96">8-950-146-0196</a>
+        <a href="tel:+7 (950) 146-01-96">8-950-146-01-96</a>
       </button>
     </header>
   );
