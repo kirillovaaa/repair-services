@@ -78,3 +78,24 @@
   font-weight: 500;
   line-height: 24px;
 }
+
+@media screen and (max-width: 800px) {
+  .steps {
+    padding-top: 69px;
+  }
+  .steps__title {
+    font-size: 25px;
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .steps__subtitle-container {
+    display: none;
+  }
+  .steps__items {
+    flex-direction: column;
+  }
+  .steps__item {
+    padding: 33px 9px 46px 16px;
+  }
+}

@@ -5,6 +5,7 @@
   justify-content: space-between;
   background-color: #2b2b2b;
   padding: 24px 55px 21px;
+  flex-wrap: wrap;
 }
 
 .header__logo-container {
@@ -24,6 +25,7 @@
   font-size: 30px;
   font-weight: 600;
   line-height: 30px;
+  margin: 0;
 }
 
 .header__logo-subtitle {
@@ -31,12 +33,14 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 20px;
+  margin: 0;
 }
 
 .header__nav {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  flex-wrap: wrap;
 }
 
 .header__items {
@@ -82,4 +86,37 @@
   flex-direction: row;
   align-items: center;
   gap: 32px;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 420px) {
+  .header__buttons {
+    display: none;
+  }
+  .header__logo-image {
+    width: 43px;
+    height: 42px;
+  }
+
+  .header__logo__title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .header__logo__subtitle {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+@media screen and (max-width: 1145px) {
+  .header__nav {
+    display: none;
+  }
+}
+@media screen and (max-width: 635px) {
+  .header__button-image {
+    display: none;
+  }
+  .header__button {
+    display: none;
+  }
 }

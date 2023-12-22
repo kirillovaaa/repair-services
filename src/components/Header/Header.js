@@ -10,8 +10,8 @@ function Header() {
       <div className="header__logo-container">
         <img src={logo} className="header__logo-image" alt="logo" />
         <div className="header__text-container">
-          <div className="header__logo-title">РЕМОНТ</div>
-          <div className="header__logo-subtitle">Бытовой техники</div>
+          <p className="header__logo-title">РЕМОНТ</p>
+          <p className="header__logo-subtitle">Бытовой техники</p>
         </div>
       </div>
       <div className="header__buttons">
