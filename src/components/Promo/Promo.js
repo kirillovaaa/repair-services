@@ -4,7 +4,7 @@ import "./Promo.css";
 function Promo() {
   return (
     <section className="promo">
-      <h1 className="promo__title">
+      {/* <h1 className="promo__title">
         Ремонт, установка и обслуживание <br />
         бытовой техники в Иркутске
       </h1>
@@ -17,6 +17,14 @@ function Promo() {
       <h2 className="promo__subtitle">
         Устраним любые поломки в короткие сроки по лучшим ценам в городе
       </h2>
+      <div className="promo__items">
+        <div className="promo__item">
+          <p className="promo__item-text">
+            Гарантия на работы <br />
+            до 3 лет
+          </p>
+        </div>
+      </div> */}
     </section>
   );
 }

@@ -1,5 +1,5 @@
 .promo {
-  background: url(../../images/promo.png);
+  /* background: url(../../images/promo.png); */
   background-size: cover;
   height: 100vh;
   display: flex;
@@ -45,4 +45,22 @@
   line-height: 24px;
   color: #fffcfc;
   margin-bottom: 70px;
+}
+
+.promo__items {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.promo__item {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.promo__item-text {
+  font-size: 16px;
+  line-height: 24.66px;
+  color: #fffcfc;
 }

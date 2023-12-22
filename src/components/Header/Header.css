@@ -3,9 +3,8 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  height: 100px;
   background-color: #2b2b2b;
-  padding: 0 55px;
+  padding: 24px 55px 16px;
 }
 
 .header__logo-container {
@@ -37,13 +36,13 @@
 .header__nav {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 15px;
 }
 
 .header__items {
   display: flex;
   flex-direction: row;
-  gap: 35px;
+  gap: 15px;
   padding-top: 8px;
 }
 
@@ -76,4 +75,11 @@
 
 .header__button:hover {
   cursor: pointer;
+}
+
+.header__buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 32px;
 }
