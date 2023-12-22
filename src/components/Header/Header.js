@@ -31,7 +31,7 @@ function Header() {
           <img src={whatsapp} className="header__button-image" alt="whatsapp" />
         </a>
         <button className="header__button">
-          <a href="tel:+7 (950) 146-01-96">8-950-146-01-96</a>
+          <a href="tel:+7 (950) 146-01-96">8-950-146-0196</a>
         </button>
       </div>
     </header>

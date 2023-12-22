@@ -12,7 +12,6 @@
   font-weight: 700;
   line-height: 70px;
   text-align: center;
-  color: #fffcfc;
   padding-top: 98px;
 }
 
@@ -42,7 +41,6 @@
   font-size: 18px;
   font-weight: 500;
   line-height: 24px;
-  color: #fffcfc;
   margin-bottom: 68px;
 }
 
@@ -50,7 +48,7 @@
   display: flex;
   flex-direction: row;
   gap: 66px;
-  margin-bottom: 110px;
+  margin-bottom: 109px;
 }
 
 .promo__item {
@@ -66,7 +64,6 @@
 .promo__item-text {
   font-size: 16px;
   line-height: 24.66px;
-  color: #fffcfc;
   font-weight: 500;
   margin: 0;
 }
