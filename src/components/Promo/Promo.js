@@ -1,10 +1,14 @@
 import React from "react";
 import "./Promo.css";
+import shield from "../../images/shield.svg";
+import point from "../../images/point.svg";
+import key from "../../images/key.svg";
+import human from "../../images/human.svg";
 
 function Promo() {
   return (
     <section className="promo">
-      {/* <h1 className="promo__title">
+      <h1 className="promo__title">
         Ремонт, установка и обслуживание <br />
         бытовой техники в Иркутске
       </h1>
@@ -19,12 +23,34 @@ function Promo() {
       </h2>
       <div className="promo__items">
         <div className="promo__item">
+          <img src={shield} className="header__item-image" alt="shield" />
           <p className="promo__item-text">
             Гарантия на работы <br />
             до 3 лет
           </p>
         </div>
-      </div> */}
+        <div className="promo__item">
+          <img src={point} className="header__item-image" alt="point" />
+          <p className="promo__item-text">
+            Выезд на дом в <br /> течении 1 часа <br />
+            весь город и прогород
+          </p>
+        </div>
+        <div className="promo__item">
+          <img src={key} className="header__item-image" alt="key" />
+          <p className="promo__item-text">
+            Оригинальные <br /> запчасти и аналоги в <br />
+            наличии
+          </p>
+        </div>
+        <div className="promo__item">
+          <img src={human} className="header__item-image" alt="human" />
+          <p className="promo__item-text">
+            Мастера с опытом <br />
+            работы более 10 лет
+          </p>
+        </div>
+      </div>
     </section>
   );
 }
