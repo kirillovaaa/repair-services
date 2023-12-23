@@ -5,6 +5,9 @@
   padding-top: 96px;
   align-items: center;
 }
+.steps__media320 {
+  display: none;
+}
 .steps__br {
   display: none;
 }
@@ -44,7 +47,7 @@
   display: flex;
   flex-direction: row;
   gap: 30px;
-  margin-bottom: 110px;
+  margin-bottom: 91px;
 }
 .steps__item {
   display: flex;
@@ -85,7 +88,85 @@
   font-weight: 500;
   line-height: 24px;
 }
+.steps__question {
+  margin: 0;
+  margin-bottom: 55px;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 57.6px;
+}
+.steps__question-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
+  row-gap: 64px;
+  margin-bottom: 113px;
+  margin: 0 54px;
+}
+.steps__question-item {
+  display: flex;
+  flex-direction: column;
+  padding: 36px 0px 5px 10px;
+  align-items: center;
+  border-radius: 20px;
+  background: url(http://localhost:3000/static/media/background.6b86452eb6acb23fe5b2.png);
+  background-size: cover;
+}
+.steps__question-title {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 57.6px;
+  align-self: start;
+  margin-bottom: 30px;
+}
+.steps__question-subtitle {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  align-self: start;
+  margin-bottom: 30px;
+}
+.steps__question-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.steps__question-button {
+  padding: 20px 31px;
+  border-radius: 20px;
+  border: none;
+  background: #feb832;
+  font-size: 18px;
+  font-weight: 700;
+}
+@media screen and (max-width: 360px) {
+  .steps__media320 {
+    display: flex;
+  }
+  .steps__question {
+    font-size: 25px;
+    line-height: 40px;
+    margin-top: 65px;
+  }
+  .steps__question-items {
+    gap: 20px;
+    margin: 0 22px;
+  }
 
+  .steps__items {
+    margin: 0 18px;
+  }
+  .steps__question-title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .steps__question-subtitle {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
 @media screen and (max-width: 800px) {
   .steps {
     padding-top: 69px;
@@ -107,5 +188,8 @@
   }
   .steps__item {
     padding: 28px 9px 42px 11px;
+  }
+  .steps__question-items {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
