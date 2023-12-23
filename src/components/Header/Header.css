@@ -90,6 +90,9 @@
 }
 
 @media screen and (max-width: 420px) {
+  .header {
+    padding: 24px 55px 34px;
+  }
   .header__buttons {
     display: none;
   }
@@ -98,11 +101,11 @@
     height: 42px;
   }
 
-  .header__logo__title {
+  .header__logo-title {
     font-size: 20px;
     line-height: 20px;
   }
-  .header__logo__subtitle {
+  .header__logo-subtitle {
     font-size: 14px;
     line-height: 20px;
   }

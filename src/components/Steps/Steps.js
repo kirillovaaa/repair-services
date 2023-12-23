@@ -4,7 +4,9 @@ import "./Steps.css";
 function Steps() {
   return (
     <section className="steps">
-      <h1 className="steps__title">Как мы работаем: 4 простых шага</h1>
+      <h1 className="steps__title">
+        Как мы работаем: <br className="steps__br" />4 простых шага
+      </h1>
       <div className="steps__subtitle-container">
         <h3 className="steps__subtitle-text">
           Сделайте первый шаг. Просто позвоните

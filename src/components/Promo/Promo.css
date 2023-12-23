@@ -74,28 +74,27 @@
 }
 
 @media screen and (max-width: 800px) {
-  /* br {
+  .promo__br {
     display: none;
-  } */
-
+  }
   .promo {
     background-position: 30%;
   }
   .promo__title {
     font-size: 25px;
     line-height: 40px;
-    padding-top: 82px;
+    padding-top: 78px;
   }
   .promo__subtitle {
     text-align: center;
   }
   .promo__items {
     flex-direction: column;
-    gap: 18px;
+    gap: 31px;
     width: 290px;
   }
   .promo__buttons {
-    margin-top: 16px;
+    margin-top: 19px;
   }
   .promo__subtitle {
     font-size: 16px;

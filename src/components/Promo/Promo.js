@@ -25,28 +25,30 @@ function Promo() {
         <div className="promo__item">
           <img src={shield} className="header__item-image" alt="shield" />
           <p className="promo__item-text">
-            Гарантия на работы <br />
+            Гарантия на работы <br br className="promo__br" />
             до 3 лет
           </p>
         </div>
         <div className="promo__item">
           <img src={point} className="header__item-image" alt="point" />
           <p className="promo__item-text">
-            Выезд на дом в <br /> течении 1 часа <br />
+            Выезд на дом в <br className="promo__br" /> течении 1 часа{" "}
+            <br className="promo__br" />
             весь город и прогород
           </p>
         </div>
         <div className="promo__item">
           <img src={key} className="header__item-image" alt="key" />
           <p className="promo__item-text">
-            Оригинальные <br /> запчасти и аналоги в <br />
+            Оригинальные <br br className="promo__br" /> запчасти и аналоги в{" "}
+            <br br className="promo__br" />
             наличии
           </p>
         </div>
         <div className="promo__item">
           <img src={human} className="header__item-image" alt="human" />
           <p className="promo__item-text">
-            Мастера с опытом <br />
+            Мастера с опытом <br br className="promo__br" />
             работы более 10 лет
           </p>
         </div>
