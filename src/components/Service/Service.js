@@ -7,7 +7,7 @@ import humanwhite from "../../images/human-white.svg";
 
 function Service() {
   return (
-    <section className="service">
+    <section className="service" id="service">
       <h1 className="service__title">Почему нас рекомендуют клиенты?</h1>
       <div className="service__items">
         <div className="service__item">

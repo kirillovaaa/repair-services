@@ -54,7 +54,7 @@
   flex-direction: column;
   align-items: center;
   border-radius: 20px;
-  background: url(../../images/background.png);
+  background: url(../../images//background.png);
   background-size: cover;
   padding: 33px 9px 28px 16px;
 }
@@ -116,7 +116,7 @@
   padding: 36px 0px 5px 10px;
   align-items: center;
   border-radius: 20px;
-  background: url(http://localhost:3000/static/media/background.6b86452eb6acb23fe5b2.png);
+  background: url(../../images/background.png);
   background-size: cover;
 }
 .steps__question-title {

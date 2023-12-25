@@ -5,7 +5,7 @@ import point from "../../images/point.svg";
 import key from "../../images/key.svg";
 import human from "../../images/human.svg";
 
-function Promo() {
+function Promo({ onClickOpen }) {
   return (
     <section className="promo">
       <h1 className="promo__title">
@@ -13,7 +13,9 @@ function Promo() {
         бытовой техники в Иркутске
       </h1>
       <div className="promo__buttons">
-        <button className="promo__button">Вызвать мастера</button>
+        <button className="promo__button" type="submit" onClick={onClickOpen}>
+          Вызвать мастера
+        </button>
         <button className="promo__button">
           <a href="tel:+7 (950) 146-01-96">8-950-146-0196</a>
         </button>

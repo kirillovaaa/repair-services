@@ -9,7 +9,7 @@ import coffeemachine from "../../images/coffeemachine.png";
 
 function Steps() {
   return (
-    <section className="steps">
+    <section className="steps" id="steps">
       <h1 className="steps__title">
         Как мы работаем: <br className="steps__br" />4 простых шага
       </h1>
@@ -64,7 +64,9 @@ function Steps() {
           </h3>
         </div>
       </div>
-      <h1 className="steps__question">Что у вас сломалось?</h1>
+      <h1 className="steps__question" id="steps__question">
+        Что у вас сломалось?
+      </h1>
       <div className="steps__question-items">
         <div className="steps__question-item">
           <img

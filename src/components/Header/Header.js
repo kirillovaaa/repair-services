@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../../images/logo.svg";
 import whatsapp from "../../images/whatsapp-icon.svg";
+import ScrollIntoView from "react-scroll-into-view";
 
 import "./Header.css";
 
@@ -17,11 +18,21 @@ function Header() {
       <div className="header__buttons">
         <div className="header__nav">
           <div className="header__items">
-            <div className="header__nav-item">Как мы работаем?</div>
-            <div className="header__nav-item">Услуги</div>
-            <div className="header__nav-item">Скидка</div>
-            <div className="header__nav-item">Отзывы</div>
-            <div className="header__nav-item">Частые вопросы</div>
+            <ScrollIntoView selector="#steps">
+              <div className="header__nav-item">Как мы работаем?</div>
+            </ScrollIntoView>
+            <ScrollIntoView selector="#steps__question">
+              <div className="header__nav-item">Услуги</div>
+            </ScrollIntoView>
+            <ScrollIntoView selector="#discount">
+              <div className="header__nav-item">Скидка</div>
+            </ScrollIntoView>
+            <ScrollIntoView selector="#reviews">
+              <div className="header__nav-item">Отзывы</div>
+            </ScrollIntoView>
+            <ScrollIntoView selector="#question">
+              <div className="header__nav-item">Частые вопросы</div>
+            </ScrollIntoView>
           </div>
           <div className="header__description">
             Работаем <span class="colortext">24/7</span> с Пн- Вс
