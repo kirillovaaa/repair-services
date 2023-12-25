@@ -90,7 +90,11 @@ function Steps() {
           </div>
         </div>
         <div className="steps__question-item">
-          <img src={fridge} className="steps__question-image" alt="fridge" />
+          <img
+            src={fridge}
+            className="steps__question-image steps__image-fridge"
+            alt="fridge"
+          />
           <h2 className="steps__question-title">
             Ремонт <br />
             холодильников

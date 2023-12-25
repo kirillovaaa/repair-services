@@ -95,13 +95,20 @@
   font-weight: 600;
   line-height: 57.6px;
 }
+.steps__question-image {
+  width: 212px;
+  height: 230px;
+}
+.steps__image-fridge {
+  width: 141px;
+}
 .steps__question-items {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 30px;
   row-gap: 64px;
   margin-bottom: 113px;
-  margin: 0 54px;
+  margin: 0 54px 108px;
 }
 .steps__question-item {
   display: flex;
@@ -141,6 +148,7 @@
   font-size: 18px;
   font-weight: 700;
 }
+
 @media screen and (max-width: 360px) {
   .steps__media320 {
     display: flex;
@@ -170,6 +178,7 @@
 @media screen and (max-width: 800px) {
   .steps {
     padding-top: 69px;
+    padding-bottom: 152px;
   }
   .steps__br {
     display: flex;
