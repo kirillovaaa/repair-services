@@ -7,7 +7,7 @@ import kitchenstove from "../../images/kitchenstove.png";
 import oven from "../../images/oven.png";
 import coffeemachine from "../../images/coffeemachine.png";
 
-function Steps() {
+function Steps({ onClickOpen }) {
   return (
     <section className="steps" id="steps">
       <h1 className="steps__title">
@@ -81,11 +81,17 @@ function Steps() {
           <h3 className="steps__question-subtitle">
             Что сломалось у Вашей <br className=" steps__media320" />
             стиральной машины? <br className=" steps__media320" />
-            Оставьте номер телефона или <br className=" steps__media320" />{" "}
+            Оставьте номер телефона или <br className=" steps__media320" />
             позвоните
           </h3>
           <div className="steps__question-buttons">
-            <button className="steps__question-button">Вызвать мастера</button>
+            <button
+              className="steps__question-button"
+              type="submit"
+              onClick={onClickOpen}
+            >
+              Вызвать мастера
+            </button>
             <button className="steps__question-button">
               <a href="tel:+7 (950) 146-01-96">8-950-146-0196</a>
             </button>
@@ -108,7 +114,13 @@ function Steps() {
             позвоните
           </h3>
           <div className="steps__question-buttons">
-            <button className="steps__question-button">Вызвать мастера</button>
+            <button
+              className="steps__question-button"
+              type="submit"
+              onClick={onClickOpen}
+            >
+              Вызвать мастера
+            </button>
             <button className="steps__question-button">
               <a href="tel:+7 (950) 146-01-96">8-950-146-0196</a>
             </button>
@@ -131,7 +143,13 @@ function Steps() {
             позвоните
           </h3>
           <div className="steps__question-buttons">
-            <button className="steps__question-button">Вызвать мастера</button>
+            <button
+              className="steps__question-button"
+              type="submit"
+              onClick={onClickOpen}
+            >
+              Вызвать мастера
+            </button>
             <button className="steps__question-button">
               <a href="tel:+7 (950) 146-01-96">8-950-146-0196</a>
             </button>
@@ -154,7 +172,13 @@ function Steps() {
             позвоните
           </h3>
           <div className="steps__question-buttons">
-            <button className="steps__question-button">Вызвать мастера</button>
+            <button
+              className="steps__question-button"
+              type="submit"
+              onClick={onClickOpen}
+            >
+              Вызвать мастера
+            </button>
             <button className="steps__question-button">
               <a href="tel:+7 (950) 146-01-96">8-950-146-0196</a>
             </button>
@@ -172,7 +196,13 @@ function Steps() {
             номер телефона или <br className=" steps__media320" /> позвоните
           </h3>
           <div className="steps__question-buttons">
-            <button className="steps__question-button">Вызвать мастера</button>
+            <button
+              className="steps__question-button"
+              type="submit"
+              onClick={onClickOpen}
+            >
+              Вызвать мастера
+            </button>
             <button className="steps__question-button">
               <a href="tel:+7 (950) 146-01-96">8-950-146-0196</a>
             </button>
@@ -195,7 +225,13 @@ function Steps() {
             позвоните
           </h3>
           <div className="steps__question-buttons">
-            <button className="steps__question-button">Вызвать мастера</button>
+            <button
+              className="steps__question-button"
+              type="submit"
+              onClick={onClickOpen}
+            >
+              Вызвать мастера
+            </button>
             <button className="steps__question-button">
               <a href="tel:+7 (950) 146-01-96">8-950-146-0196</a>
             </button>

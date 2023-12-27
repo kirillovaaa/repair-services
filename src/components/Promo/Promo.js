@@ -34,7 +34,7 @@ function Promo({ onClickOpen }) {
         <div className="promo__item">
           <img src={point} className="header__item-image" alt="point" />
           <p className="promo__item-text">
-            Выезд на дом в <br className="promo__br" /> течении 1 часа{" "}
+            Выезд на дом в <br className="promo__br" /> течении 1 часа
             <br className="promo__br" />
             весь город и прогород
           </p>
@@ -42,7 +42,7 @@ function Promo({ onClickOpen }) {
         <div className="promo__item">
           <img src={key} className="header__item-image" alt="key" />
           <p className="promo__item-text">
-            Оригинальные <br br className="promo__br" /> запчасти и аналоги в{" "}
+            Оригинальные <br br className="promo__br" /> запчасти и аналоги в
             <br br className="promo__br" />
             наличии
           </p>

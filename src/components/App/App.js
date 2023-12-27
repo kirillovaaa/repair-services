@@ -23,7 +23,7 @@ const App = () => {
     <main>
       <Header />
       <Promo onClickOpen={openPopup} />
-      <Steps />
+      <Steps onClickOpen={openPopup} />
       <Service />
       <Discount />
       <Reviews />

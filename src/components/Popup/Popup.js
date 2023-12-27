@@ -13,11 +13,15 @@ function Popup({ isOpen, onClose, onSubmit }) {
       <form className="popup__form" onSubmit={handleSubmit}>
         <h2 className="popup__heading">
           Вызовите мастера сегодня и получите <br />
-          скидку 15 % за скорость принятия решения <br /> 8-950-146-0196
+          <span clasName="colortext">скидку 15 % </span>
+          за скорость принятия решения <br />
+          <span className="underline"> 8-950-146-0196 </span>
         </h2>
         <div className="popup__input-container">
           <div className="popup__input-wrapper">
-            <span className="popup__input-text">Телефон *</span>
+            <span className="popup__input-text">
+              Телефон <span class="colortext"> *</span>
+            </span>
             <input
               className="popup__input"
               type="text"

@@ -54,7 +54,12 @@
   flex-direction: column;
   align-items: center;
   border-radius: 20px;
-  background: url(../../images//background.png);
+  background: linear-gradient(
+      0deg,
+      rgba(108, 108, 108, 0.1) 0%,
+      rgba(108, 108, 108, 0.1) 100%
+    ),
+    url(../../images//background.png);
   background-size: cover;
   padding: 33px 9px 28px 16px;
 }
@@ -116,7 +121,12 @@
   padding: 36px 0px 5px 10px;
   align-items: center;
   border-radius: 20px;
-  background: url(../../images/background.png);
+  background-image: linear-gradient(
+      0deg,
+      rgba(108, 108, 108, 0.1) 0%,
+      rgba(108, 108, 108, 0.1) 100%
+    ),
+    url(../../images/background.png);
   background-size: cover;
 }
 .steps__question-title {
@@ -147,6 +157,9 @@
   background: #feb832;
   font-size: 18px;
   font-weight: 700;
+}
+.steps__question-button:hover {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 360px) {

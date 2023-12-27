@@ -35,7 +35,7 @@ function Header() {
             </ScrollIntoView>
           </div>
           <div className="header__description">
-            Работаем <span class="colortext">24/7</span> с Пн- Вс
+            Работаем <span className="colortext">24/7</span> с Пн- Вс
           </div>
         </div>
         <a href="https://api.whatsapp.com/send?phone=79913712791">

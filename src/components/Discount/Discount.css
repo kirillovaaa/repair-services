@@ -1,0 +1,183 @@
+.discount {
+  display: flex;
+  flex-direction: column;
+  background: url(../../images/background-discount.png);
+  background-size: cover;
+  align-items: center;
+}
+
+.br__discount {
+  display: none;
+}
+.discount__title {
+  margin: 0;
+  margin-top: 95px;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 57.6px;
+}
+
+.discount__container {
+  display: flex;
+  flex-direction: row;
+  gap: 21px;
+  margin-bottom: 47px;
+  align-items: center;
+}
+
+.discount__container-subtitle {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+}
+.discount__container-button {
+  padding: 15px 45px;
+  border-radius: 20px;
+  border: none;
+  background: #feb832;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.discount__input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 570px;
+  margin-bottom: 30px;
+}
+
+.discount__input {
+  border: 0;
+  border-bottom: 1px solid #adadad;
+  width: 100%;
+  padding-bottom: 15px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #fffcfc;
+  background: transparent;
+}
+
+.discount__input-button {
+  padding: 19px 30px;
+  border-radius: 20px;
+  border: none;
+  background: #feb832;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.discount__input-button:hover {
+  cursor: pointer;
+}
+
+.discount__countdown {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-bottom: 97px;
+  align-items: center;
+}
+
+.discount__countdown-time {
+  text-align: center;
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 70px;
+}
+
+.discount__countdown-label {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 57.6px;
+}
+
+.discount__countdown-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.discount__countdown-division {
+  font-size: 90px;
+  font-weight: 600;
+  line-height: 57.6px;
+}
+@media screen and (max-width: 660px) {
+  .discount__title {
+    text-align: center;
+  }
+  .discount__container-button {
+    font-size: 14px;
+    padding: 13px 22px;
+  }
+  .discount__container-subtitle {
+    font-size: 15px;
+  }
+
+  .discount__countdown-item {
+    gap: 10px;
+  }
+  .discount__countdown-time {
+    font-size: 50px;
+  }
+  .discount__countdown-label {
+    font-size: 30px;
+  }
+  .discount__countdown-division {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .discount {
+    background-position-x: 59%;
+  }
+  .br__discount {
+    display: flex;
+  }
+
+  .discount__container {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .discount__container-button {
+    font-size: 14px;
+    padding: 17px 61px;
+  }
+  .discount__title {
+    text-align: center;
+    font-size: 25px;
+    line-height: 40px;
+    margin-top: 71px;
+  }
+  .discount__container-subtitle {
+    text-align: center;
+    font-size: 16px;
+  }
+  .discount__input-container {
+    width: 280px;
+  }
+  .discount__input-button {
+    margin-bottom: 37px;
+  }
+
+  .discount__countdown-time {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 40px;
+  }
+  .discount__countdown-label {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+  .discount__countdown-division {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 57.6px;
+  }
+}
