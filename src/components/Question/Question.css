@@ -1,0 +1,111 @@
+.question {
+  display: flex;
+  flex-direction: column;
+  background: url(../../images/background-question.png) no-repeat;
+  background-size: cover;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.question__title {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 57.6px;
+  margin-top: 98px;
+}
+
+.question__container {
+  display: flex;
+  flex-direction: row;
+  gap: 21px;
+  margin-bottom: 49px;
+}
+.question__container-subtitle {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 57.6px;
+}
+.question__container-button {
+  padding: 15px 45px;
+  border-radius: 20px;
+  border: none;
+  background: #feb832;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.question__items {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.question__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 770px;
+  width: 100%;
+  border-bottom: 1px solid #adadad;
+  align-items: center;
+}
+
+.question__item-text {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+
+.question__button {
+  padding: 19px 45px;
+  border-radius: 20px;
+  border: none;
+  background: #feb832;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 110px;
+}
+
+@media screen and (max-width: 660px) {
+  .question__title {
+    font-size: 30px;
+  }
+  .question__container-subtitle {
+    font-size: 30px;
+  }
+  .question__container-button {
+    font-size: 14px;
+    padding: 13px 22px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .question {
+    background-position-x: 4%;
+  }
+  .question__title {
+    font-size: 25px;
+    margin-top: 74px;
+    line-height: 1;
+  }
+  .question__container-subtitle {
+    font-size: 25px;
+    line-height: 2;
+  }
+  .question__container {
+    flex-direction: column;
+    margin-bottom: 49px;
+  }
+  .question__container-button {
+    padding: 13px 46px;
+    font-size: 18px;
+  }
+  .question__container-subtitle {
+    text-align: center;
+  }
+}

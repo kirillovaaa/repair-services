@@ -13,7 +13,7 @@ function Popup({ isOpen, onClose, onSubmit }) {
       <form className="popup__form" onSubmit={handleSubmit}>
         <h2 className="popup__heading">
           Вызовите мастера сегодня и получите <br />
-          <span clasName="colortext">скидку 15 % </span>
+          <span className="colortext">скидку 15 % </span>
           за скорость принятия решения <br />
           <span className="underline"> 8-950-146-0196 </span>
         </h2>

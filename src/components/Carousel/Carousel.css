@@ -1,0 +1,49 @@
+.alice-carousel__dots {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 110px;
+}
+
+.alice-carousel__dots-item:not(.__custom) {
+  background-color: #adadad;
+  width: 16px;
+  height: 16px;
+  transition: all 0.15s ease-in-out;
+}
+
+.alice-carousel__dots-item:not(.__custom):hover {
+  background-color: #feb832;
+  opacity: 0.8;
+}
+
+.alice-carousel__dots-item:not(.__custom):not(:last-child) {
+  margin-right: 0;
+}
+
+.alice-carousel__dots-item:not(.__custom).__active {
+  background-color: #feb832;
+  width: 20px;
+  height: 20px;
+}
+
+.carousel-item-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+  overflow: hidden;
+}
+
+.carousel-item-container > img {
+  width: 100%;
+  object-fit: cover;
+}
+
+@media all and (min-width: 512px) {
+  .carousel-item-container > img {
+    width: fit-content;
+    height: 281px;
+  }
+}
