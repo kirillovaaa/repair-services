@@ -39,7 +39,7 @@ function Discount() {
         />
       </div>
       <button className="discount__input-button">Получить скидку</button>
-      <div class="discount__countdown">
+      <div className="discount__countdown">
         <Timer />
       </div>
     </section>

@@ -1,4 +1,5 @@
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import moment from "moment";
+import React, { useEffect, useRef, useState } from "react";
 
 const useInterval = (callback, delay) => {
   const savedCallback = useRef();
@@ -12,33 +13,72 @@ const useInterval = (callback, delay) => {
       savedCallback.current();
     }
 
-    let id = setInterval(tick, delay);
-    return () => clearInterval(id);
+    let id;
+
+    if (delay) {
+      id = setInterval(tick, delay);
+    }
+
+    return () => {
+      if (id) {
+        clearInterval(id);
+      }
+    };
   }, [delay]);
 };
 
-function getInitialDate() {
-  let saleEndDate = localStorage.getItem("saleEndDate");
-
-  if (!saleEndDate) {
-    const dt = new Date();
-    saleEndDate = dt.setHours(dt.getHours() + 2);
-    localStorage.setItem("saleEndDate", saleEndDate);
-  }
-
-  return Number(saleEndDate);
+function saveDateTimestamp() {
+  const date = moment(Date.now());
+  const saleEndDate = date.add(moment.duration(4, "hours")).toString();
+  localStorage.setItem("saleEndDate", saleEndDate);
+  return saleEndDate;
 }
 
 const Timer = () => {
-  const initialDate = useMemo(() => getInitialDate(), []);
+  const [initialDate, setInitialDate] = useState();
+  const [secondsLeft, setSecondsLeft] = useState(0);
+  const [isTimerActive, setIsTimerActive] = useState(false);
 
-  const [secondsLeft, setSecondsLeft] = useState(
-    Math.abs(initialDate - new Date()) / 1000
+  useEffect(() => {
+    let saleEndDate = localStorage.getItem("saleEndDate");
+
+    if (!saleEndDate) {
+      setInitialDate(saveDateTimestamp());
+    } else {
+      // разница в днях между сейчас и датой окончания скидки должна быть больше или равна одному, чтобы перезапустить скидку
+      const shouldSaleRestart =
+        moment(Date.now()).diff(moment(saleEndDate), "days") >= 1;
+      if (shouldSaleRestart) {
+        setInitialDate(saveDateTimestamp());
+      } else {
+        setInitialDate(saleEndDate);
+      }
+    }
+  }, []);
+
+  useEffect(() => {
+    if (initialDate) {
+      const secs = calculateSecondsLeft();
+      if (secs > 0) {
+        setSecondsLeft(secs);
+        setIsTimerActive(true);
+      }
+    }
+  }, [initialDate]);
+
+  useEffect(() => {
+    if (isTimerActive && secondsLeft <= 0) {
+      setIsTimerActive(false);
+    }
+  }, [isTimerActive, secondsLeft]);
+
+  useInterval(
+    () => {
+      const secs = calculateSecondsLeft();
+      setSecondsLeft(secs);
+    },
+    isTimerActive ? 1000 : null
   );
-
-  useInterval(() => {
-    setSecondsLeft(Math.abs(initialDate - new Date()) / 1000);
-  }, 1000);
 
   function getFormattedTime() {
     const date = new Date(secondsLeft * 1000).toISOString().substring(11, 19);
@@ -49,25 +89,31 @@ const Timer = () => {
     };
   }
 
+  function calculateSecondsLeft() {
+    return moment(initialDate).diff(moment(Date.now()), "seconds");
+  }
+
+  const { hours, minutes, seconds } = getFormattedTime();
+
   return (
     <>
-      <div class="discount__countdown-item">
+      <div className="discount__countdown-item">
         <span className="discount__countdown-time" id="hours">
-          {getFormattedTime().hours}
+          {hours}
         </span>
         <span className="discount__countdown-label">часов</span>
       </div>
       <span className="discount__countdown-division">:</span>
-      <div class="discount__countdown-item">
+      <div className="discount__countdown-item">
         <span className="discount__countdown-time" id="minutes">
-          {getFormattedTime().minutes}
+          {minutes}
         </span>
         <span className="discount__countdown-label">минут</span>
       </div>
       <span className="discount__countdown-division">:</span>
-      <div class="discount__countdown-item">
+      <div className="discount__countdown-item">
         <span className="discount__countdown-time" id="seconds">
-          {getFormattedTime().seconds}
+          {seconds}
         </span>
         <span className="discount__countdown-label">секунд</span>
       </div>

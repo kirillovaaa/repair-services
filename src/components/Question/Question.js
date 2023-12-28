@@ -43,7 +43,7 @@ function Question() {
           <img className="question__item-image" src={plus} alt="Иконка плюса" />
         </div>
       </div>
-      <a href="https://api.whatsapp.com/send?phone=79913712791">
+      <a href="https://api.whatsapp.com/send?phone=79913712791" target="blank">
         <button className="question__button">Задать вопрос</button>
       </a>
     </section>

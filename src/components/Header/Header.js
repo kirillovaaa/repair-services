@@ -38,7 +38,10 @@ function Header() {
             Работаем <span className="colortext">24/7</span> с Пн- Вс
           </div>
         </div>
-        <a href="https://api.whatsapp.com/send?phone=79913712791">
+        <a
+          href="https://api.whatsapp.com/send?phone=79913712791"
+          target="blank"
+        >
           <img src={whatsapp} className="header__button-image" alt="whatsapp" />
         </a>
         <button className="header__button">

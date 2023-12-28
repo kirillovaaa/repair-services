@@ -20,7 +20,7 @@ function Popup({ isOpen, onClose, onSubmit }) {
         <div className="popup__input-container">
           <div className="popup__input-wrapper">
             <span className="popup__input-text">
-              Телефон <span class="colortext"> *</span>
+              Телефон <span className="colortext"> *</span>
             </span>
             <input
               className="popup__input"
