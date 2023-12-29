@@ -20,6 +20,14 @@
   margin-bottom: 42px;
 }
 
+.reviews__subtitle-colortext {
+  color: #feb832;
+}
+.reviews__subtitle-colortext:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
 .reviews__carousel-container {
   display: flex;
   flex-direction: row;

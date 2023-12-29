@@ -2,7 +2,7 @@ import React from "react";
 import "./Question.css";
 import plus from "../../images/plus-icon.svg";
 
-function Question() {
+function Question({ onClickOpen }) {
   return (
     <section className="question" id="question">
       <h3 className="question__title">Остались вопросы?</h3>
@@ -43,9 +43,9 @@ function Question() {
           <img className="question__item-image" src={plus} alt="Иконка плюса" />
         </div>
       </div>
-      <a href="https://api.whatsapp.com/send?phone=79913712791" target="blank">
-        <button className="question__button">Задать вопрос</button>
-      </a>
+      <button className="question__button" type="submit" onClick={onClickOpen}>
+        Задать вопрос
+      </button>
     </section>
   );
 }

@@ -45,9 +45,9 @@ const Timer = () => {
     if (!saleEndDate) {
       setInitialDate(saveDateTimestamp());
     } else {
-      // разница в днях между сейчас и датой окончания скидки должна быть больше или равна одному, чтобы перезапустить скидку
+      // разница в днях между сейчас и датой окончания скидки должна быть положительной, чтобы перезапустить скидку
       const shouldSaleRestart =
-        moment(Date.now()).diff(moment(saleEndDate), "days") >= 1;
+        moment(Date.now()).diff(moment(saleEndDate), "seconds") > 0;
       if (shouldSaleRestart) {
         setInitialDate(saveDateTimestamp());
       } else {

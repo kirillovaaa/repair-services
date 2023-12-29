@@ -30,11 +30,20 @@ function Discount() {
         />
         <input
           className="discount__input"
-          type="number"
+          type="phone"
           name="phone"
           placeholder="Телефон *"
-          minLength="2"
-          maxLength="30"
+          minLength="10"
+          maxLength="16"
+          required={true}
+        />
+        <input
+          className="discount__input"
+          type="text"
+          name="description"
+          placeholder="Опишите, что у вас случилось"
+          minLength="10"
+          maxLength="200"
           required={true}
         />
       </div>
