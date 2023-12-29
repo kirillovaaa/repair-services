@@ -38,6 +38,9 @@
   font-size: 18px;
   font-weight: 700;
 }
+.discount__container-button:hover {
+  cursor: pointer;
+}
 
 .discount__input-container {
   display: flex;

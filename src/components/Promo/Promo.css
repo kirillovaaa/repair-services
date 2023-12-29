@@ -13,7 +13,7 @@
   font-weight: 700;
   line-height: 70px;
   text-align: center;
-  padding-top: 98px;
+  padding-top: 204px;
 }
 
 .promo__buttons {
@@ -94,7 +94,7 @@
   .promo__title {
     font-size: 25px;
     line-height: 40px;
-    padding-top: 78px;
+    margin-top: 42px;
   }
   .promo__buttons {
     margin-top: 19px;

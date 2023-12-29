@@ -34,6 +34,9 @@
   font-size: 18px;
   font-weight: 700;
 }
+.question__container-button:hover {
+  cursor: pointer;
+}
 
 .question__items {
   display: flex;

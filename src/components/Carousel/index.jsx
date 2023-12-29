@@ -6,7 +6,13 @@ import review3 from "../../images/review-3.png";
 import review4 from "../../images/review-4.png";
 import review5 from "../../images/review-5.png";
 import review6 from "../../images/review-6.png";
-import review7 from "../../images/review-6.png";
+import review8 from "../../images/review-8.png";
+import review9 from "../../images/review-9.png";
+import review10 from "../../images/review-10.png";
+import review11 from "../../images/review-11.png";
+import review12 from "../../images/review-12.png";
+import review13 from "../../images/review-13.png";
+import review14 from "../../images/review-14.png";
 import AliceCarousel from "react-alice-carousel";
 import "./Carousel.css";
 
@@ -17,7 +23,13 @@ const IMAGES = [
   { key: "review-4", src: review4 },
   { key: "review-5", src: review5 },
   { key: "review-6", src: review6 },
-  { key: "review-7", src: review7 },
+  { key: "review-8", src: review8 },
+  { key: "review-9", src: review9 },
+  { key: "review-10", src: review10 },
+  { key: "review-11", src: review11 },
+  { key: "review-12", src: review12 },
+  { key: "review-13", src: review13 },
+  { key: "review-14", src: review14 },
 ];
 
 const Carousel = () => {
