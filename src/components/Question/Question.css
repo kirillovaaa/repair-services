@@ -21,11 +21,13 @@
   gap: 21px;
   margin-bottom: 49px;
 }
+
 .question__container-subtitle {
   font-size: 40px;
   font-weight: 600;
   line-height: 57.6px;
 }
+
 .question__container-button {
   padding: 15px 45px;
   border-radius: 20px;
@@ -34,6 +36,7 @@
   font-size: 18px;
   font-weight: 700;
 }
+
 .question__container-button:hover {
   cursor: pointer;
 }
@@ -49,19 +52,48 @@
 
 .question__item {
   display: flex;
+  flex-direction: column;
+  max-width: 770px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #adadad;
+  background: transparent;
+}
+
+.question__item-image {
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+}
+
+.question__item-container {
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   max-width: 770px;
   width: 100%;
-  border-bottom: 1px solid #adadad;
-  align-items: center;
+  border: none;
+  align-items: flex-start;
+  background: transparent;
+  color: #fffcfc;
 }
 
-.question__item-text {
+.question__item-question {
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
   margin-bottom: 15px;
+  text-align: left;
+}
+
+.question__item-answer {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 15px;
+  color: #fffcfc;
+  text-align: left;
 }
 
 .question__button {

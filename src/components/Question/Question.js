@@ -1,6 +1,6 @@
 import React from "react";
 import "./Question.css";
-import plus from "../../images/plus-icon.svg";
+import FAQ from "../FAQ";
 
 function Question({ onClickOpen }) {
   return (
@@ -13,36 +13,28 @@ function Question({ onClickOpen }) {
         </button>
       </div>
       <div className="question__items">
-        <div className="question__item">
-          <span className="question__item-text">
-            Сколько стоит вызвать мастера?
-          </span>
-          <img className="question__item-image" src={plus} alt="Иконка плюса" />
-        </div>
-        <div className="question__item">
-          <span className="question__item-text">
-            Как быстро вы сможете приехать?
-          </span>
-          <img className="question__item-image" src={plus} alt="Иконка плюса" />
-        </div>
-        <div className="question__item">
-          <span className="question__item-text">Даете ли вы гарантию?</span>
-          <img className="question__item-image" src={plus} alt="Иконка плюса" />
-        </div>
-        <div className="question__item">
-          <span className="question__item-text">
-            Какие поломки можно отремонтировать самостоятельно?
-          </span>
-          <img className="question__item-image" src={plus} alt="Иконка плюса" />
-        </div>
-        <div className="question__item">
-          <span className="question__item-text">
-            Всегда ли эффективно проводить ремонт или выгоднее купить новую
-            бытовую технику?
-          </span>
-          <img className="question__item-image" src={plus} alt="Иконка плюса" />
-        </div>
+        <FAQ
+          question="Сколько стоит вызвать мастера?"
+          answer="Выезд мастера бесплатный. По результатам диагностики мастер подкажет, в чем заключалась поломка и озвучит точную стоимость ремонта. Диагностика бесплатная, Вы платите только за работу и детали, если потребуются."
+        />
+        <FAQ
+          question="Как быстро вы сможете приехать?"
+          answer="Оперативный выезд в течение 30 минут после Вашей заявки на ремонт в любую точку города или приедем в назначенное Вами время."
+        />
+        <FAQ
+          question="Даете ли вы гарантию?"
+          answer="Конечно, после ремонта мы всегда даем гарантию до 3 лет. Если в течение этого времени поломка снова проявится - мастер приедет и за свой счёт все починит."
+        />
+        <FAQ
+          question="Какие поломки можно отремонтировать самостоятельно?"
+          answer="Никакие. Неквалифицированное вмешательство может привести к еще большим проблемам и более дорогому ремонту вашей техники. Даже простая замена фильтров может привести к серьезному потопу. Риск - дело благородное, но только когда он уместен."
+        />
+        <FAQ
+          question="Всегда ли эффективно проводить ремонт или выгоднее купить новую бытовую технику?"
+          answer="Ремонтировать технику выгодно всегда. Например стиральные машины холодильники, выпущенные несколько лет назад, собирались с большим запасом прочности и вполне ремонтопригодны, тогда как сейчас производители часто используют запчасти не самого высокого качества. Мы же устанавливаем только оригинальные запчасти высокого класса надежности, что на долгие годы продлевает срок службы отремонтированной техники."
+        />
       </div>
+
       <button className="question__button" type="submit" onClick={onClickOpen}>
         Задать вопрос
       </button>

@@ -142,6 +142,10 @@
     display: flex;
   }
 
+  .discount__input {
+    font-size: 15px;
+  }
+
   .discount__container {
     flex-direction: column;
     gap: 0;

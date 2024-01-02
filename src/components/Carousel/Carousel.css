@@ -46,4 +46,12 @@
     width: fit-content;
     height: 281px;
   }
+  .alice-carousel__dots {
+    gap: 5px;
+  }
+}
+@media all and (max-width: 400px) {
+  .alice-carousel__dots {
+    gap: 5px;
+  }
 }

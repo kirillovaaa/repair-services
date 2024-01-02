@@ -47,6 +47,7 @@ const App = () => {
       <Service />
       <Discount />
       <Reviews />
+
       <Question onClickOpen={openPopupRequest} />
 
       <Popup isOpen={isOpenRequest} onClose={closePopups}>
