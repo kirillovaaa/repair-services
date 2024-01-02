@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/repair-services/static/css/main.5ff88183.css",
-    "main.js": "/repair-services/static/js/main.813ac059.js",
+    "main.css": "/repair-services/static/css/main.a5d71648.css",
+    "main.js": "/repair-services/static/js/main.c5423cac.js",
     "static/media/promo.png": "/repair-services/static/media/promo.a7233231f6ac6086f963.png",
     "static/media/background-discount.png": "/repair-services/static/media/background-discount.9bbb75231baaea38e025.png",
     "static/media/background-question.png": "/repair-services/static/media/background-question.324ea7c292fa7fd11407.png",
@@ -41,11 +41,11 @@
     "static/media/close-icon.svg": "/repair-services/static/media/close-icon.7feb6debacd792f75c07e0fef6a88417.svg",
     "static/media/minus-icon.svg": "/repair-services/static/media/minus-icon.094941fcfe73578cfed6ce297e933936.svg",
     "static/media/close-icon-white.svg": "/repair-services/static/media/close-icon-white.aeb4f4b90b5160370a81f9d188f80b51.svg",
-    "main.5ff88183.css.map": "/repair-services/static/css/main.5ff88183.css.map",
-    "main.813ac059.js.map": "/repair-services/static/js/main.813ac059.js.map"
+    "main.a5d71648.css.map": "/repair-services/static/css/main.a5d71648.css.map",
+    "main.c5423cac.js.map": "/repair-services/static/js/main.c5423cac.js.map"
   },
   "entrypoints": [
-    "static/css/main.5ff88183.css",
-    "static/js/main.813ac059.js"
+    "static/css/main.a5d71648.css",
+    "static/js/main.c5423cac.js"
   ]
 }
