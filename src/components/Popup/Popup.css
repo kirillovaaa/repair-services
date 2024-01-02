@@ -60,6 +60,8 @@
   border-radius: 20px;
   border: none;
   background: #feb832;
+  color: #2b2b2b;
+
   font-size: 18px;
   font-weight: 700;
 }
@@ -167,8 +169,8 @@
   }
 
   .popup__close-button {
-    top: 16px;
-    right: 14px;
+    top: 10px;
+    right: 10px;
   }
 
   .popup__close-icon {

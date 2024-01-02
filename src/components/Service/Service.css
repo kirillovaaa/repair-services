@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   background-color: #2b2b2b;
+  padding: 27px 0px;
 }
 
 .service__title {

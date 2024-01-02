@@ -31,14 +31,17 @@
   font-weight: 500;
   line-height: 24px;
 }
+
 .steps__subtitle-button {
   border-radius: 20px;
   border: none;
   padding: 0 45px;
   background: #feb832;
+  color: #2b2b2b;
   font-size: 18px;
   font-weight: 700;
 }
+
 .steps__subtitle-button:hover {
   cursor: pointer;
 }
@@ -177,9 +180,6 @@
   .steps__question-items {
     gap: 20px;
     margin: 0 22px;
-  }
-  .steps__question-item {
-    padding-bottom: 36px;
   }
 
   .steps__items {
