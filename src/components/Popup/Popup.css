@@ -20,6 +20,9 @@
   visibility: visible;
   opacity: 1;
 }
+.popup__heading-450 {
+  margin: 0;
+}
 .popup__window {
   display: flex;
   flex-direction: column;
@@ -85,7 +88,7 @@
   width: 570px;
   height: 53px;
   border-radius: 5px;
-  border: 1px solid var(--, #2b2b2b);
+  border: 1px solid #2b2b2b;
 }
 .popup__input-description {
   height: 124px;
@@ -144,13 +147,17 @@
     height: 102px;
   }
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 450px) {
   .popup__heading {
     display: none;
   }
 
-  .popup__heading-380 {
+  .popup__heading-450 {
     display: flex;
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
   }
 
   .popup__input {

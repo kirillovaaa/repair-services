@@ -10,7 +10,7 @@ const RequestForm = ({ onSubmit }) => {
         за скорость принятия решения <br />
         <span className="underline"> 8-950-146-0196 </span>
       </h3>
-      <h3 className="popup__heading-380">Закажите звонок</h3>
+      <h3 className="popup__heading-450">Закажите звонок</h3>
 
       <div className="popup__input-container">
         <div className="popup__input-wrapper">

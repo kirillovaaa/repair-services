@@ -75,6 +75,9 @@
 }
 
 @media screen and (max-width: 660px) {
+  .promo {
+    background-position: 40%;
+  }
   .promo__subtitle {
     text-align: center;
   }
@@ -83,14 +86,18 @@
     gap: 31px;
     width: 290px;
   }
+  .promo__item-text {
+    font-size: 16px;
+  }
 }
 @media screen and (max-width: 800px) {
+  .promo__items {
+    gap: 38px;
+  }
   .promo__br {
     display: none;
   }
-  .promo {
-    background-position: 30%;
-  }
+
   .promo__title {
     font-size: 25px;
     line-height: 40px;
@@ -107,9 +114,5 @@
   .header__item-image {
     width: 20px;
     height: 20px;
-  }
-  .promo__item-text {
-    font-size: 14px;
-    line-height: 15px;
   }
 }

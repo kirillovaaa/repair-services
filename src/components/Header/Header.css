@@ -124,11 +124,15 @@
     width: 30px;
     height: 30px;
   }
+  .header__button-image {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 @media screen and (max-width: 440px) {
   .header {
-    padding: 26px 7px 33px 15px;
+    padding: 30px 15px;
   }
 
   .header__buttons {
@@ -137,8 +141,8 @@
   }
 
   .header__button-image {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
   }
   .header__logo-image {
     width: 43px;
