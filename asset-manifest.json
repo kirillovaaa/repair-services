@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/repair-services/static/css/main.cb1c414a.css",
+    "main.css": "/repair-services/static/css/main.49c08b62.css",
     "main.js": "/repair-services/static/js/main.c5423cac.js",
     "static/media/promo.png": "/repair-services/static/media/promo.a7233231f6ac6086f963.png",
     "static/media/background-discount.png": "/repair-services/static/media/background-discount.9bbb75231baaea38e025.png",
@@ -41,11 +41,11 @@
     "static/media/close-icon.svg": "/repair-services/static/media/close-icon.7feb6debacd792f75c07e0fef6a88417.svg",
     "static/media/minus-icon.svg": "/repair-services/static/media/minus-icon.094941fcfe73578cfed6ce297e933936.svg",
     "static/media/close-icon-white.svg": "/repair-services/static/media/close-icon-white.aeb4f4b90b5160370a81f9d188f80b51.svg",
-    "main.cb1c414a.css.map": "/repair-services/static/css/main.cb1c414a.css.map",
+    "main.49c08b62.css.map": "/repair-services/static/css/main.49c08b62.css.map",
     "main.c5423cac.js.map": "/repair-services/static/js/main.c5423cac.js.map"
   },
   "entrypoints": [
-    "static/css/main.cb1c414a.css",
+    "static/css/main.49c08b62.css",
     "static/js/main.c5423cac.js"
   ]
 }
