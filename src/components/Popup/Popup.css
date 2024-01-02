@@ -169,12 +169,12 @@
   }
 
   .popup__close-button {
-    top: 10px;
+    top: 15px;
     right: 10px;
   }
 
   .popup__close-icon {
     width: 16px;
-    height: 14px;
+    height: 16px;
   }
 }

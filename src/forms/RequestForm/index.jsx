@@ -20,10 +20,10 @@ const RequestForm = ({ onSubmit }) => {
 
           <input
             className="popup__input"
-            type="phone"
-            name="phone"
+            type="name"
+            name="name"
             minLength="2"
-            maxLength="16"
+            maxLength="30"
             required={true}
           />
         </div>
@@ -33,10 +33,10 @@ const RequestForm = ({ onSubmit }) => {
           </span>
           <input
             className="popup__input"
-            type="text"
-            name="number"
-            minLength="2"
-            maxLength="30"
+            type="phone"
+            name="phone"
+            minLength="9"
+            maxLength="18"
             required={true}
           />
         </div>
