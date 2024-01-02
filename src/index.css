@@ -8,10 +8,28 @@ body {
   color: #fffcfc;
 }
 
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+button {
+  transition: opacity 0.15s ease-in-out;
+}
+button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
 a {
   text-decoration: none;
   color: #2b2b2b;

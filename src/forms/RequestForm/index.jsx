@@ -1,7 +1,7 @@
 import React from "react";
 import "../../components/Popup/Popup.css";
 
-const RequestForm = ({ onSubmit }) => {
+const RequestForm = ({ onSubmit, showLoading, showError }) => {
   return (
     <form className="popup__form" name="requestForm" onSubmit={onSubmit}>
       <h3 className="popup__heading">
@@ -33,8 +33,9 @@ const RequestForm = ({ onSubmit }) => {
           </span>
           <input
             className="popup__input"
-            type="phone"
+            type="tel"
             name="phone"
+            pattern="(?:\+7|8)(?:9)[0-9]{9}"
             minLength="9"
             maxLength="18"
             required={true}
@@ -42,19 +43,29 @@ const RequestForm = ({ onSubmit }) => {
         </div>
         <div className="popup__input-wrapper">
           <span className="popup__input-text">Опишите, что случилось</span>
-          <input
+          <textarea
             className="popup__input popup__input-description"
             type="text"
-            name="Description"
-            minLength="2"
-            maxLength="200"
+            name="message"
+            minLength="10"
+            maxLength="500"
             required={true}
           />
         </div>
+
+        {showError && (
+          <h4 style={{ color: "red" }} className="popup__error-text">
+            Ошибка сервера. Попробуйте снова или позвоните нам
+          </h4>
+        )}
       </div>
 
-      <button type="submit" className="popup__save-button">
-        Вызвать мастера
+      <button
+        type="submit"
+        className="popup__save-button"
+        disabled={showLoading}
+      >
+        {showLoading ? "Отправка..." : "Вызвать мастера"}
       </button>
     </form>
   );

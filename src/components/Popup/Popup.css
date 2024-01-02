@@ -89,10 +89,13 @@
   margin-top: 15px;
   width: 570px;
   height: 53px;
+  padding: 0 16px;
   border-radius: 5px;
   border: 1px solid #2b2b2b;
 }
 .popup__input-description {
+  padding: 16px;
+  resize: none;
   height: 124px;
 }
 .popup__input-wrapper {

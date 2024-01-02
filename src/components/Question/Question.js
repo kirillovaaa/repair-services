@@ -1,6 +1,7 @@
 import React from "react";
 import "./Question.css";
 import FAQ from "../FAQ";
+import Successful from "../Successful/Succesful";
 
 function Question({ onClickOpen }) {
   return (
@@ -38,6 +39,8 @@ function Question({ onClickOpen }) {
       <button className="question__button" type="submit" onClick={onClickOpen}>
         Задать вопрос
       </button>
+
+      <Successful />
     </section>
   );
 }

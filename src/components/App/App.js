@@ -9,10 +9,14 @@ import Question from "../Question/Question";
 import Popup from "../Popup/Popup";
 import RequestForm from "../../forms/RequestForm";
 import SideNav from "../SideNav/SideNav";
+import Successful from "../Successful/Succesful";
 
 const App = () => {
-  const [isOpenRequest, setIsOpenRequest] = useState(false);
+  const [isOpenPopup, setIsOpenPopup] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  // ready | success | error
+  const [formState, setFormState] = useState("ready");
+  const [isLoadingForm, setIsLoadingForm] = useState(false);
 
   function openMenu() {
     setIsMenuOpen(true);
@@ -22,17 +26,48 @@ const App = () => {
     setIsMenuOpen(false);
   }
 
-  function openPopupRequest() {
-    setIsOpenRequest(true);
+  function openPopup() {
+    setIsOpenPopup(true);
   }
 
-  function closePopups() {
-    setIsOpenRequest(false);
+  function closePopup() {
+    setIsOpenPopup(false);
+    if (formState === "error") {
+      setFormState("ready");
+    }
   }
 
-  function handleSubmitRequest(e) {
+  async function handleSubmitRequest(e) {
     // отменяем стандартный переход на адрес формы
     e.preventDefault();
+
+    if (formState === "success") {
+      setIsOpenPopup(true);
+      return;
+    }
+
+    try {
+      const { name, phone, message } = e.target.elements;
+      setIsLoadingForm(true);
+      await fetch("http://localhost:3010/", {
+        method: "post",
+        mode: "cors",
+        body: JSON.stringify({
+          name: name.value,
+          phone: phone.value,
+          message: message.value,
+        }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      setIsOpenPopup(true);
+      setFormState("success");
+    } catch (e) {
+      setFormState("error");
+    } finally {
+      setIsLoadingForm(false);
+    }
   }
 
   return (
@@ -42,22 +77,29 @@ const App = () => {
         onOpenMenu={openMenu}
         onCloseMenu={closeMenu}
       />
-      <Promo onClickOpen={openPopupRequest} />
-      <Steps onClickOpen={openPopupRequest} />
+      <Promo onClickOpen={openPopup} />
+      <Steps onClickOpen={openPopup} />
       <Service />
-      <Discount />
+      <Discount onSubmit={handleSubmitRequest} />
       <Reviews />
+      <Question onClickOpen={openPopup} />
 
-      <Question onClickOpen={openPopupRequest} />
-
-      <Popup isOpen={isOpenRequest} onClose={closePopups}>
-        <RequestForm onSubmit={handleSubmitRequest} />
-      </Popup>
+      {formState === "ready" || formState === "error" ? (
+        <Popup isOpen={isOpenPopup} onClose={closePopup}>
+          <RequestForm
+            onSubmit={handleSubmitRequest}
+            showLoading={isLoadingForm}
+            showError={formState === "error"}
+          />
+        </Popup>
+      ) : formState === "success" ? (
+        <Successful isOpen={isOpenPopup} onClose={closePopup} />
+      ) : null}
 
       <SideNav
         isMenuOpen={isMenuOpen}
         onCloseMenu={closeMenu}
-        onOpenPopupRequest={openPopupRequest}
+        onOpenPopupRequest={openPopup}
       />
     </main>
   );

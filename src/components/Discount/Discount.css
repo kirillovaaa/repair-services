@@ -63,6 +63,11 @@
   background: transparent;
 }
 
+.discount__input-message {
+  height: 80px;
+  resize: none;
+}
+
 .discount__input-button {
   padding: 19px 30px;
   border-radius: 20px;

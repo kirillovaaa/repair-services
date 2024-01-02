@@ -2,9 +2,14 @@ import React from "react";
 import "./Discount.css";
 import Timer from "../Timer";
 
-function Discount() {
+function Discount({ onSubmit }) {
   return (
-    <section className="discount" id="discount">
+    <form
+      id="discount"
+      className="discount"
+      name="discount"
+      onSubmit={onSubmit}
+    >
       <h2 className="discount__title">
         Скидка <span className="colortext"> 15% </span> при{" "}
         <br className="br__discount" />
@@ -30,28 +35,31 @@ function Discount() {
         />
         <input
           className="discount__input"
-          type="phone"
+          type="tel"
           name="phone"
+          pattern="(?:\+7|8)(?:9)[0-9]{9}"
           placeholder="Телефон *"
           minLength="10"
           maxLength="16"
           required={true}
         />
-        <input
-          className="discount__input"
+        <textarea
+          className="discount__input discount__input-message"
           type="text"
-          name="description"
+          name="message"
           placeholder="Опишите, что у вас случилось"
           minLength="10"
-          maxLength="200"
+          maxLength="500"
           required={true}
         />
       </div>
-      <button className="discount__input-button">Получить скидку</button>
+      <button className="discount__input-button" type="submit">
+        Получить скидку
+      </button>
       <div className="discount__countdown">
         <Timer />
       </div>
-    </section>
+    </form>
   );
 }
 
