@@ -54,7 +54,7 @@ const RequestForm = ({ onSubmit, showLoading, showError }) => {
         </div>
 
         {showError && (
-          <h4 style={{ color: "red" }} className="popup__error-text">
+          <h4 className="popup__error-text">
             Ошибка сервера. Попробуйте снова или позвоните нам
           </h4>
         )}

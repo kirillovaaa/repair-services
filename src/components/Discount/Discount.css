@@ -9,6 +9,7 @@
 .br__discount {
   display: none;
 }
+
 .discount__title {
   margin: 0;
   margin-top: 95px;
@@ -23,6 +24,15 @@
   gap: 21px;
   margin-bottom: 47px;
   align-items: center;
+}
+
+.discount__error-text {
+  color: red;
+  margin: 0;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 70px;
 }
 
 .discount__container-subtitle {
@@ -115,6 +125,7 @@
   font-weight: 600;
   line-height: 57.6px;
 }
+
 @media screen and (max-width: 660px) {
   .discount__title {
     text-align: center;
@@ -193,5 +204,10 @@
     font-size: 50px;
     font-weight: 600;
     line-height: 57.6px;
+  }
+}
+@media screen and (max-width: 570px) {
+  .discount__error-text {
+    font-size: 9px;
   }
 }

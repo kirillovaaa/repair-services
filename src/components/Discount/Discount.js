@@ -2,7 +2,7 @@ import React from "react";
 import "./Discount.css";
 import Timer from "../Timer";
 
-function Discount({ onSubmit }) {
+function Discount({ onSubmit, showError }) {
   return (
     <form
       id="discount"
@@ -52,6 +52,12 @@ function Discount({ onSubmit }) {
           maxLength="500"
           required={true}
         />
+
+        {showError && (
+          <h4 className="discount__error-text">
+            Ошибка сервера. Попробуйте снова или позвоните нам
+          </h4>
+        )}
       </div>
       <button className="discount__input-button" type="submit">
         Получить скидку

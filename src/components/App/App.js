@@ -80,7 +80,10 @@ const App = () => {
       <Promo onClickOpen={openPopup} />
       <Steps onClickOpen={openPopup} />
       <Service />
-      <Discount onSubmit={handleSubmitRequest} />
+      <Discount
+        onSubmit={handleSubmitRequest}
+        showError={formState === "error"}
+      />
       <Reviews />
       <Question onClickOpen={openPopup} />
 
