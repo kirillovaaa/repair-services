@@ -93,7 +93,7 @@
   font-weight: 700;
 }
 
-.header__button:hover {
+.header__logo-container:hover {
   cursor: pointer;
 }
 
@@ -103,6 +103,10 @@
   align-items: center;
   gap: 32px;
   flex-wrap: wrap;
+}
+
+.header__logo-image:hover {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1145px) {

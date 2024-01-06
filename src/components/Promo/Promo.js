@@ -7,7 +7,7 @@ import human from "../../images/human.svg";
 
 function Promo({ onClickOpen }) {
   return (
-    <section className="promo">
+    <section className="promo" id="promo">
       <h1 className="promo__title">
         Ремонт, установка и обслуживание <br />
         бытовой техники в Иркутске

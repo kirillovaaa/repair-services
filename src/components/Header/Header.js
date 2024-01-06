@@ -9,15 +9,17 @@ import "./Header.css";
 
 function Header({ isMenuOpen, onOpenMenu, onCloseMenu }) {
   return (
-    <header className="header">
-      <div className="header__logo-container">
-        <img src={logo} className="header__logo-image" alt="logo" />
+    <header className="header" id="header">
+      <ScrollIntoView selector="#promo">
+        <div className="header__logo-container">
+          <img src={logo} className="header__logo-image" alt="logo" />
 
-        <div className="header__text-container">
-          <p className="header__logo-title">РЕМОНТ</p>
-          <p className="header__logo-subtitle">Бытовой техники</p>
+          <div className="header__text-container">
+            <p className="header__logo-title">РЕМОНТ</p>
+            <p className="header__logo-subtitle">Бытовой техники</p>
+          </div>
         </div>
-      </div>
+      </ScrollIntoView>
 
       <div className="header__buttons">
         <div className="header__nav">
@@ -49,7 +51,7 @@ function Header({ isMenuOpen, onOpenMenu, onCloseMenu }) {
         </div>
 
         <a
-          href="https://api.whatsapp.com/send?phone=79913712791"
+          href="https://api.whatsapp.com/send?phone=79501460196"
           target="blank"
         >
           <img src={whatsapp} className="header__button-image" alt="whatsapp" />
